@@ -4,29 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Toys</title>
-    <link rel="stylesheet" href="./estilos.css">
-    <style>
-      img{
-        width: 200px;
-        height: 200px;
-        border-radius: 10px;
-        margin: 10px ;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-   <header>
+  <header class="header">
     <a href="index.html" class="logo">Epic Toys</a> 
-    <button class="Hamburguesa" id="mobile-menu">
+    <button class="hamburguesa" id="mobile-menu">
         <span></span>
         <span></span>
         <span></span> 
       </button>
 
-      <nav> 
+      <nav class="menu"> 
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="servicio.html">Servicio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
@@ -34,20 +26,105 @@
       </nav>
   </header>
   <main>
-    <section class="portada">
-      <h1> Juegueteria Epic Toys </h1>
+    <section class="portada contenedor">
+      <h1> Jugueteria Epic Toys </h1>
       <p> Donde se consiguen los mejores juguetes, coleccionables y juegos de mesa</p>
-      <a href="contacto.html" class="btn">Ver más</a>
+      <a href="contacto.html" class="boton">Contactanos</a>
     </section>
-    <section class="servicios">
+    
+ <section class="servicios contenedor">
       <h2>Servicios</h2>
-      <ul>
-        <li>Jueguetes</li>
-        <li>Coleccionables</li>
-        <li>Juegos de mesa</li>
-      </ul>
+      <div class="cards">
+        
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta">
+          <img src="img/servicio-1.jpg" alt="Servicio 1">
+          <h3>Título 1</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta">
+          <img src="img/servicio-2.jpg" alt="Servicio 2">
+          <h3>Título 2</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta">
+          <img src="img/servicio-3.jpg" alt="Servicio 3">
+          <h3>Título 3</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+        <!-- Tarjeta 4 -->
+        <article class="tarjeta">
+          <img src="img/servicio-4.jpg" alt="Servicio 4">
+          <h3>Título 4</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+        <!-- Tarjeta 5 -->
+        <article class="tarjeta">
+          <img src="img/servicio-5.jpg" alt="Servicio 5">
+          <h3>Título 5</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+        <!-- Tarjeta 6 -->
+        <article class="tarjeta">
+          <img src="img/servicio-6.jpg" alt="Servicio 6">
+          <h3>Título 6</h3>
+          <p>Descripción breve del servicio o producto.</p>
+          <a href="#" class="boton">Ver más</a>
+        </article>
+
+      </div>
     </section>
-    <section class="galeria">
+<section class="preguntas contenedor">
+      <h2>Preguntas frecuentes</h2>
+      <div class="accordion">
+        
+        <!-- Pregunta 1 -->
+        <div class="item">
+          <button class="titulo">¿Hacen envíos a todo el país?</button>
+          <div class="contenido">
+            <p>Sí, realizamos envíos nacionales a través de correos y encomiendas.</p>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="item">
+          <button class="titulo">¿Cuáles son los métodos de pago?</button>
+          <div class="contenido">
+            <p>Aceptamos tarjetas de crédito, débito y transferencias bancarias.</p>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="item">
+          <button class="titulo">¿Los productos son originales?</button>
+          <div class="contenido">
+            <p>Todos nuestros juguetes y coleccionables son 100% originales.</p>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="item">
+          <button class="titulo">¿Cuál es el horario de atención?</button>
+          <div class="contenido">
+            <p>Atendemos de lunes a sábado de 9:00 a.m. a 7:00 p.m.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="galeria contenedor">
       <h2>Galería</h2>
       <p>Explora nuestra galería de productos y descubre la variedad de juguetes que tenemos para ofrecer.</p>
       <img src="./img/jueguetes1.jpg" alt="Juguetes">
@@ -55,6 +132,7 @@
       <img src="./img/jueguetes3.jpg" alt="Juguetes">
     </section>
   </main>
+  
   <footer>
     <div>
       <p>
@@ -64,17 +142,13 @@
         teléfono: 2222-2222<br>
       </p>
     </div>
-    <ul>
+    <ul class="redes">
       <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
       <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
     </ul>
     <p>&copy; 2024 Epic Toys. Todos los derechos reservados.</p>
   </footer>
 
-
-
-
   <script src="./js/main.js"></script>
 </body>
 </html>
-
